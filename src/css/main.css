@@ -60,6 +60,7 @@ ul{
 }
 a{
     text-decoration: none;
+    transition: .3s;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -69,3 +70,72 @@ body{
 html, body{
     scroll-behavior: smooth;
 }
+.logo__header a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+img{
+   display: flex;
+   width: 100%; 
+}
+.nav__container{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    z-index: 9;  
+}
+.nav__header {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: var(--gradient-1);
+}
+.nav__menu__btn span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+}
+.nav__menu__btn span:hover{
+    color: var(--secudary-color); 
+}
+
+.nav__links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #1d2127;
+    transition: .5s;
+    z-index: -1;
+    transform: translateY(-100%)
+}
+
+.nav__links.open {
+    transform: translateY(0);
+}
+
+.nav__link__item a{
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .3s;
+}
+.nav__link__item a:hover{
+    color: var(--secudary-color);
+}
+
+
+
+
