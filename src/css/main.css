@@ -138,4 +138,34 @@ img{
 
 
 
+/*===============Media Quire======*/
+
+@media (width > 768px) {
+
+    .nav__container {
+        position: static;
+        padding-block: 2rem 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .nav__header{
+        flex: 1;
+        padding: 0;
+    }
+    .nav__menu__btn{
+        display: none;
+    }
+    .nav__links{
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        background-color: #fff;
+        transform: none;
+    }
+    
+}
+
 

@@ -15,4 +15,6 @@ menuBtn.addEventListener('click', (e)=> {
 
 menuMobile.addEventListener("click", (e) => {
     menuMobile.classList.remove("open");
+    menuBtnIcon.setAttribute("class", "ri-menu-line");
 })
+
