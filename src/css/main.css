@@ -62,14 +62,15 @@ a{
     text-decoration: none;
     transition: .3s;
 }
-body{
+html, body{
+    scroll-behavior: smooth;
+}
+body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--primary-color-dark);
     color: var(--white);
 }
-html, body{
-    scroll-behavior: smooth;
-}
+
 .logo__header a{
     font-size: 1.5rem;
     font-weight: 600;
@@ -80,6 +81,7 @@ img{
    display: flex;
    width: 100%; 
 }
+
 .nav__container{
     position: fixed;
     isolation: isolate;
@@ -117,13 +119,13 @@ img{
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-    background-color: #1d2127;
     transition: .5s;
     z-index: -1;
     transform: translateY(-100%)
 }
 
 .nav__links.open {
+    background-color: #1d2127;
     transform: translateY(0);
 }
 
@@ -136,15 +138,66 @@ img{
     color: var(--secudary-color);
 }
 
+/*====header====*/
 
+.header__container{
+   display: grid;
+   gap: 0 2rem;
+}
+
+.header__imagem img{
+    margin-top: 2rem;
+    max-width: 400px;
+    height: 200px;
+    margin-inline: auto;
+    border-radius: 1rem;
+}
+
+.header__container h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+.header__container .section__desciption{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-block: 1rem  2rem;
+}
+.header__container .section__desciption strong{
+    color: var(--color-secondary-dark);
+    font-weight: 600;
+}
+.header__bts {
+    text-align: center;
+}
+.header__bts button{
+    border: none;
+}
+.header__bts .btn:hover span {
+    transform: translateX(5px);
+}
 
 /*===============Media Quire======*/
 
-@media (width > 768px) {
+@media( width > 540px){
+    .header__imagem img {
+        max-width: 690px;
+        height: 400px;
+    }
+    .header__container h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+}
 
+@media (width > 810px) {
+    
     .nav__container {
         position: static;
-        padding-block: 2rem 1rem;
+        padding-block: 1rem;
         padding-inline: 1rem;
         display: flex;
         align-items: center;
@@ -154,6 +207,7 @@ img{
     .nav__header{
         flex: 1;
         padding: 0;
+        background-image: none;
     }
     .nav__menu__btn{
         display: none;
@@ -162,10 +216,20 @@ img{
         position: static;
         padding: 0;
         flex-direction: row;
-        background-color: #fff;
         transform: none;
+        justify-content: flex-end;
+        background-color: none;
     }
-    
+    .header__container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "texto imagem";
+    }
+
+    .header__imagem img {
+        border-radius: 12rem;
+        grid-area: imagem ;
+    }
+
 }
 
 
