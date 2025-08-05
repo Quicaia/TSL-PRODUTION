@@ -101,6 +101,9 @@ button{
     justify-content: space-between;
     background-image: var(--gradient-1);
 }
+.logo__header {
+    max-width: 150px;
+}
 .nav__menu__btn span{
     font-size: 1.5rem;
     font-weight: 500;
@@ -110,6 +113,7 @@ button{
 .nav__menu__btn span:hover{
     color: var(--secudary-color); 
 }
+
 
 .nav__links {
     position: absolute;
@@ -248,10 +252,8 @@ button{
 .footer__content {
     text-align: center;
 }
-.logo_footer {
-    color: var(--color-secondary-dark);
-    font-size: 1.5rem;
-    font-weight: 700;
+.logo_footer img{
+    max-width: 150px;
 }
 .footer__content p{
     margin-top: 1rem;
