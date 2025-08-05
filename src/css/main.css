@@ -3,8 +3,12 @@
 :root {
     --primary-color-dark: #1a1c1c;
     --primary-color-dark2: #121113;
-    --text-color: #c0c0c0;
     --secudary-color: #ff5722;
+    --text-color: #c0c0c0;
+    --roteiro-color: #e6e2de;
+    --roteiro-background: #e3dfdb;
+    --color-dark-text:#444444;
+    --color-text-light: #7c7c7c;
     --color-secudary-light: #e4e6c3;
     --color-secondary-dark: #b7bf9e;
     --gradient-1 : linear-gradient(to bottom, var(--primary-color-dark), #1d2127);
@@ -263,10 +267,57 @@ button{
     border-radius: 24px;
 }
 
+.roteiro__quadro{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   border-radius: 24px;
+   background-color: var(--roteiro-background);
+}
+.roteiro__quadro
+.titulo-quadro{
+    color: var(--secudary-color);
+    line-height: 1.3rem;
+}
 
+.roteiro-item {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 2px solid #1d21272a;
+}
+.roteiro-item .roteiro-haeder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-
-
+.roteiro-haeder h3, span{
+    font-size: 1.4rem;
+    color: var(--color-dark-text);
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+.roteiro-haeder span{
+    font-weight: 400;
+}
+.roteiro-item:hover .roteiro-haeder h3{
+    color: var(--secudary-color);
+}
+.roteiro-item:hover span{
+    color: var(--secudary-color);
+}
+.roteiro-explica {
+    display: none;
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    color: var(--color-text-light);
+}
+.roteiro-explica.open{
+    display: flex;
+}
 /*FOOTER*/
 footer{
     background-color: var(--primary-color-dark2);
