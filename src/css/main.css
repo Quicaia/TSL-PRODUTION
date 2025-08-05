@@ -306,6 +306,7 @@ button{
 /*===============Media Quire======*/
 
 @media( width > 540px){
+
     .header__imagem img {
         max-width: 690px;
         height: 400px;
@@ -326,19 +327,22 @@ button{
     header{
         background-image: var(--gradient-1);
     }
+    .nav__header{
+        display: flex;
+    }
     .nav__container {
         position: static;
         padding-block: 1rem;
         padding-inline: 1rem;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 1rem;
     }
     .nav__header{
-        flex: 1;
+        flex-basis: auto;
+        width: 150px;
         padding: 0;
-        background-image: none;
     }
     .nav__menu__btn{
         display: none;
@@ -349,7 +353,7 @@ button{
         flex-direction: row;
         transform: none;
         justify-content: flex-end;
-        background-color: none;
+        flex-basis: auto;
     }
     .header__container{
         grid-template-columns: repeat(2, 1fr);
