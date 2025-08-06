@@ -237,8 +237,10 @@ button{
 }
 
 /*Roteiro*/
+
 .container__roteiro{
     display: grid;
+    align-items: start;
     padding-block: 2rem;
 }
 .textos-roteiro{
@@ -318,6 +320,10 @@ button{
 .roteiro-explica.open{
     display: flex;
 }
+
+
+
+
 /*FOOTER*/
 footer{
     background-color: var(--primary-color-dark2);
@@ -447,6 +453,13 @@ footer{
         grid-area: imagem ;
     }
 
+    .container__roteiro{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+    .roteiro__imagem {
+        max-width: 500px;
+    }
 }
 
 @media (width > 940px){
