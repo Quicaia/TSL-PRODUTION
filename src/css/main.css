@@ -3,19 +3,30 @@
 :root {
     --primary-color-dark: #1a1c1c;
     --primary-color-dark2: #121113;
+
+    /* 2ª*/
     --secudary-color: #ff5722;
-    --text-color: #c0c0c0;
-    --roteiro-color: #e6e2de;
-    --roteiro-background: #e3dfdb;
-    --color-dark-text:#444444;
-    --color-text-light: #7c7c7c;
+    --secondary-color-dark: #b9471a;
+    --secondary-color-light: #ffc2a1;
+
+    /* Texto */
+     --text-color-light: #c0c0c0;
+     --text-color-dark: #444444;
+     --text-color-muted: #7c7c7c;
+
+
     --color-secudary-light: #e4e6c3;
     --color-secondary-dark: #b7bf9e;
+    
     --gradient-1 : linear-gradient(to bottom, var(--primary-color-dark), #1d2127);
     --gradient-2: linear-gradient(to bottom, #317fec, #35e4df);
  
     --white: #ffffff;
     --max-width: 1200px;
+
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --shadow-strong: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 *{
     margin: 0;
@@ -32,14 +43,14 @@
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 400;
-    color: var(--text-color);
+    color: var(--text-color-light);
     line-height: 3rem;
     text-align: center;
 }
 
 .section__description {
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: var(--text-color-muted);
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -236,6 +247,10 @@ button{
     text-align: center;
 }
 
+.descricao__texto{
+    color: var(--text-color-light);
+}
+
 /*Roteiro*/
 
 .container__roteiro{
@@ -246,22 +261,19 @@ button{
 .textos-roteiro{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     margin-bottom: 4rem;
 }
 
 .textos-roteiro .titulo__roteiro{
     font-size: 2rem;
     color: var(--secudary-color);
-}
-
-.textos-roteiro .section-titulo{
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
 
 .textos-roteiro p {
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: var(--text-color-light);
 
 }
 
@@ -275,12 +287,7 @@ button{
    align-items: center;
    padding: 1rem;
    border-radius: 24px;
-   background-color: var(--roteiro-background);
-}
-.roteiro__quadro
-.titulo-quadro{
-    color: var(--secudary-color);
-    line-height: 1.3rem;
+   background-color: #dddddd;
 }
 
 .roteiro-item {
@@ -297,8 +304,8 @@ button{
 
 .roteiro-haeder h3, span{
     font-size: 1.4rem;
-    color: var(--color-dark-text);
-    font-weight: 800;
+    color: var(--text-color-dark);
+    font-weight: 700;
     cursor: pointer;
     transition: .3s;
 }
@@ -315,10 +322,16 @@ button{
     display: none;
     margin-top: .5rem;
     font-size: 1.3rem;
-    color: var(--color-text-light);
+    font-weight: 600;
+    color: var(--text-color-muted);
+    transition: .3s ease-in-out;
 }
 .roteiro-explica.open{
-    display: flex;
+    display: block;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow:var(--shadow-medium) ;
 }
 
 
