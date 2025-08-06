@@ -340,9 +340,16 @@ button{
     box-shadow:var(--shadow-medium) ;
 }
 
+
+
 /** Quem-somos*/
 
-
+.container__quem-somos {
+    display: grid;
+    align-items: start;
+    padding-block: 2rem;
+    gap: 4rem;
+}
 .quem-somos-left {
     display: flex;
     flex-direction: column;
@@ -353,12 +360,72 @@ button{
 .video-mobile {
     width: 100%;
     height: 14rem; 
-
+    border-radius: 24px;
+    box-shadow: var(--shadow-medium);
 }
 
 .video-desktop {
     display: none;
 }
+
+.video-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.video-descricao {
+    color: var(--text-color-light);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.video-list {
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+.video-list li {
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+    font-weight: 400;
+}
+
+.quem-somos-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.img-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.titulo-img {
+    font-size: 2.3rem;
+    color: var(--secudary-color);
+}
+
+.content__img-equipa {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+.equipa-img img {
+    border-radius: 24px;
+    transition: .3s;
+}
+.equipa-img img:hover{
+    transform: translate(0, .22rem);
+    box-shadow: var(--shadow-strong);
+}
+
+
 
 
 /*FOOTER*/
@@ -499,6 +566,13 @@ footer{
     }
     .roteiro__quadro {
         margin-top: 6rem;
+    }
+    .container__quem-somos  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content__img-equipa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
