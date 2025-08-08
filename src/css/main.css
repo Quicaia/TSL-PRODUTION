@@ -570,9 +570,8 @@ footer{
     .container__quem-somos  {
         grid-template-columns: repeat(2, 1fr);
     }
-    .content__img-equipa {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .equipa-img{
+        max-height: 100px;
     }
 }
 
