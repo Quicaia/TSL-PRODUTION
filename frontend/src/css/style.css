@@ -435,9 +435,31 @@ button{
 
 /**ORÇMENTO*/
 .section__parceiro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
     background-color: var(--secudary-color);
 }
-
+.atendente-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+}
+.atendente-link figure {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.link-whatsapp{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--color-secudary-light);
+}
 
 /*FOOTER*/
 footer{
