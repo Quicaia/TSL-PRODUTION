@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>   
     <link rel="stylesheet" href="../css/portifolio.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>TSL | Portfolio</title>
@@ -119,11 +120,29 @@
                     </p>
                 </div>
                 <div class="img-content">
-        
-                    <img src="../img/galeria-5.jpeg" alt="galeria-5">
-                    <img src="../img/img-artista.jpg" alt="artista">
-                    <img src="/frontend/src/img/EV.jpeg" alt="Ev">
-        
+                    
+                     <div class="swiper">
+                                  <!-- Additional required wrapper -->
+                              <div class="swiper-wrapper">
+                                              <!-- Slides -->
+                                     <div class="swiper-slide">
+                                            <img src="../img/galeria-5.jpeg" alt="galeria-5">
+                                     </div>
+                                     <div class="swiper-slide">
+                                            <img src="../img/img-artista.jpg" alt="artista">
+                                     </div>
+                                     <div class="swiper-slide">
+                                            <img src="/frontend/src/img/EV.jpeg" alt="Ev">
+                                     </div>
+   
+                              </div>
+                                  <!-- If we need pagination -->
+                             <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                             <div class="swiper-button-prev"></div>
+                             <div class="swiper-button-next"></div>
+                    </div>
                 </div>
         
             </div>
