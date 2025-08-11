@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="../css/style.css">
     <link rel=""stylesheet href="../css/portifolio.css">
     <title>TSL | Portfolio</title>
@@ -105,7 +109,29 @@
         
         </section>
         <section class="section__container section__img">
-            
+            <div class="header-textos">
+                <h2 class="header-titulo"></h2>
+            </div>
+
+            <div class="swiper">
+  <!-- Additional required wrapper -->
+     <div class="swiper-wrapper">
+    <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+    ...
+             </div>
+            <!-- If we need pagination -->
+             <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+                     <div class="swiper-scrollbar"></div>
+            </div>
 
         </section>
 
@@ -175,7 +201,8 @@
         </section>
     
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/portifolio.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
