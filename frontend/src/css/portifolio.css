@@ -1,6 +1,13 @@
-@import url(../css/style.css);
 
-.swiper {
-  width: 600px;
-  height: 300px;
+
+.artistas__container{
+  display: grid;
+  background-color: #fff;
+
+}
+
+@media ( width > 540px){
+   .artistas__container{
+      grid-template-columns: repeat(2, 1fr);
+   }
 }
